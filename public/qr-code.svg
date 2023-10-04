@@ -1,0 +1,38 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="15"
+  height="15"
+  viewBox="0 0 15 15"
+>
+  <style>
+    path {
+      fill: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: white;
+      }
+    }
+  </style>
+  <path d="M14 6V1L9 1V2L13 2V6H14Z" />
+  <path d="M6 1H1V6H2V2H6V1Z" />
+  <path d="M14 14H9V13H13V9H14V14Z" />
+  <path d="M1 9L1 14H6V13H2L2 9H1Z" />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 3H7V7H3V3ZM4 4H6V6H4V4Z"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 3H8V7H12V3ZM11 4H9V6H11V4Z"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M3 8H7V12H3V8ZM4 9H6V11H4V9Z"
+  />
+  <path d="M12 10H10V8H8V10H10V12H12V10Z" />
+</svg>
