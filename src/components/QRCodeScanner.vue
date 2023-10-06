@@ -23,7 +23,7 @@ function startScan() {
     { facingMode: "environment" },
     {
       fps: 5,
-      aspectRatio: reader.value.clientWidth / reader.value.clientHeight,
+      aspectRatio: reader.value.clientHeight / reader.value.clientWidth,
     },
     (_, result) => emit("scan", result),
     () => {}
