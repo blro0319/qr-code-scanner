@@ -8,7 +8,39 @@ function handleScan(result: Html5QrcodeResult) {
 </script>
 
 <template>
-  <QRCodeScanner @scan="handleScan" />
+  <div class="main-frame">
+    <QRCodeScanner class="camera-area" @scan="handleScan" />
+  </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+$max-width: 1280px;
+
+.main-frame {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+}
+
+.camera-area {
+  flex: 1 1 0;
+  width: 100%;
+  height: 0;
+
+  background-color: black;
+}
+
+@media screen and (min-width: ($max-width + 1px)) {
+  .main-frame {
+    max-width: min($max-width, calc(100% - 64px));
+    max-height: calc(100% - 64px);
+    margin: auto;
+
+    border-radius: 16px;
+  }
+}
+</style>
